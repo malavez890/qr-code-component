@@ -54,7 +54,7 @@ body{
 }
 .divCard__h2{
     width: 90%;
-    margin-inline: ;
+    margin-inline: auto;
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 2rem;
