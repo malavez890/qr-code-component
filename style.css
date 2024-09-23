@@ -8,44 +8,56 @@
 *{
     margin: 0;
     padding: 0;
+}
+*, *::after, *::before{
     box-sizing: border-box;
 }
 html{
+  line-height: 1.15;
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 15px;
 }
 body{
+    font-size: 15px;
+    background-color: var(--Slate-300);
+}
+#main{
     min-height: 100vh;
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--Slate-300);
+    row-gap: 3em;
 }
-figure{
+.divCard{
     display: grid;
+    row-gap: 1.4em;
     grid-template-columns: min-content;
-    row-gap: 1em;
     text-align: center;
     background-color: var(--White);
     padding: 1em;
     border-radius: 10px;
-    margin-bottom: 3rem;
+    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.1);
 }
-img{
-    width: min(70vw, 250px) ;
-    border-radius: 10px;
+.divCard__image{
+    width: min(70vw, 250px);
+    border-radius: 5px;
 }
-.h1{
+.divCard__h1{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
     font-weight: 700;
     color: var(--Slate-900);
 }
-.h2{
-    font-size: 13px;
+.divCard__h2{
+    width: 90%;
+    margin-inline: ;
+    font-size: 12px;
     font-weight: 400;
+    margin-bottom: 2rem;
     color: var(--Slate-500);
 }
 .attribution {
